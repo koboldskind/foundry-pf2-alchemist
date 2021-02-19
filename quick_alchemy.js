@@ -1,3 +1,7 @@
+/*
+This Foundry VTT macro opens a dialog for your alchemist's Quick Alchemy ability. 
+It lets you select one of your formulae, crafts one item of that type, and used up one of your infused reagents.
+*/
 (async () => {
   function packName(fullName){
     let idx = fullName.lastIndexOf(".");
