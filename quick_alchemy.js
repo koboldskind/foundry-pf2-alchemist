@@ -46,7 +46,7 @@ It lets you select one of your formulae, crafts one item of that type, and used 
   const content = book.data.content;
   const waiters = content.match(/\[.*\]/g).map(e => {
     let pack = game.packs.get(packName(e));
-    return pack.getIndex().then(index => pack.getEntity(entryId(e)));
+    return pack.getEntity(entryId(e))
   });
 
   //convert your formulae into buttons to create a dialogue
